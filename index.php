@@ -35,17 +35,17 @@ require("src/utility.php");
                             <h2>Yuki Tetsuka</h2>
                             <p>
                                 <span class="icon">
-                                    <a class="navbar-item" href="#" target="_blank" >
+                                    <a class="navbar-item" href="https://github.com/ponstream24" target="_blank" >
                                         <i class='bx bxl-github'></i>
                                     </a>
                                 </span>
                                 <span class="icon">
-                                    <a class="navbar-item" href="#" target="_blank" >
+                                    <a class="navbar-item" href="https://yukitetsuka.com" target="_blank" >
                                         <i class='bx bx-link' ></i>
                                     </a>
                                 </span>
                                 <span class="icon">
-                                    <a class="navbar-item" href="#" target="_blank" >
+                                    <a class="navbar-item" href="https://note.com/yukitetsuka/" target="_blank" >
                                         <i class='bx bx-note' ></i>
                                     </a>
                                 </span>
