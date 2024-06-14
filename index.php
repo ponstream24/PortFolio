@@ -1,31 +1,28 @@
 <?php
 
-require("src/utility.php");
+require ("src/utility.php");
 
 ?>
 
 <!DOCTYPE html>
 <html>
 
-<?=html_head("About")?>
+<?= html_head("About") ?>
 
 <body>
-    <?=html_header()?>
+    <?= html_header() ?>
     <main>
         <section class="section main-content columns pb-0">
 
-            <?=html_sidebar("about")?>
+            <?= html_sidebar("about") ?>
             <div class="container column is-10" id="about">
-                
+
                 <section class="section columns pb-0">
                     <div class="container">
                         <div class="card">
                             <div class="card-image">
                                 <figure class="image is-4by3">
-                                <img
-                                    src="./img/ico.png"
-                                    alt="Placeholder image"
-                                />
+                                    <img src="./img/ico.png" alt="Placeholder image" />
                                 </figure>
                             </div>
                         </div>
@@ -35,18 +32,18 @@ require("src/utility.php");
                             <h2>Yuki Tetsuka</h2>
                             <p>
                                 <span class="icon">
-                                    <a class="navbar-item" href="https://github.com/ponstream24" target="_blank" >
+                                    <a class="navbar-item" href="https://github.com/ponstream24" target="_blank">
                                         <i class='bx bxl-github'></i>
                                     </a>
                                 </span>
                                 <span class="icon">
-                                    <a class="navbar-item" href="https://yukitetsuka.com" target="_blank" >
-                                        <i class='bx bx-link' ></i>
+                                    <a class="navbar-item" href="https://yukitetsuka.com" target="_blank">
+                                        <i class='bx bx-link'></i>
                                     </a>
                                 </span>
                                 <span class="icon">
-                                    <a class="navbar-item" href="https://note.com/yukitetsuka/" target="_blank" >
-                                        <i class='bx bx-note' ></i>
+                                    <a class="navbar-item" href="https://note.com/yukitetsuka/" target="_blank">
+                                        <i class='bx bx-note'></i>
                                     </a>
                                 </span>
                             </p>
@@ -54,31 +51,37 @@ require("src/utility.php");
                                 <strong>University Student</strong> <small>@Chiba Institute Of Technology</small>
                                 <small>Japan</small>
                                 <br />
-                                    Studying internet and IT systems at a university in Chiba. 
-                                    Additionally, researching multimedia and infrastructure, such as CG, in the laboratory.
+                                Studying internet and IT systems at a university in Chiba.
+                                Additionally, researching multimedia and infrastructure, such as CG, in the laboratory.
                             </p>
                             <p>
                                 <strong>Executive Officer</strong> <small>@Imaginic LLC.</small>
                                 <small>Japan</small>
                                 <br />
                                 I work as a system administrator, overseeing tasks related to system management.
-                                Additionally, I'm involved in the development, design, and operation of systems tailored specifically for internal use within the company.
+                                Additionally, I'm involved in the development, design, and operation of systems tailored
+                                specifically for internal use within the company.
                             </p>
                             <p>
                                 <strong>Circle Leader</strong> <small>@ITsystemLab</small>
                                 <small>Japan</small>
                                 <br />
-                                During my first year of university, I founded a new IT systems circle. 
-                                I'm actively involved in both the daily management of the circle and collaborating with fellow members to create innovative IT systems.
+                                During my first year of university, I founded a new IT systems circle.
+                                I'm actively involved in both the daily management of the circle and collaborating with
+                                fellow members to create innovative IT systems.
                             </p>
                         </div>
                     </div>
                 </section>
                 <section class="section">
                     <p>
-                        I started programming in middle school and have since gained experience as a full-stack engineer. 
-                        In high school, I co-founded a company with friends where we managed everything from planning to maintenance of games, web systems, and management systems. 
-                        For game development, I primarily used Java, while for web and management systems, I focused on Laravel. Additionally, I'm currently working part-time at an IT company, where I'm learning from real-world environments.
+                        I started programming in middle school and have since gained experience as a full-stack
+                        engineer.
+                        In high school, I co-founded a company with friends where we managed everything from planning to
+                        maintenance of games, web systems, and management systems.
+                        For game development, I primarily used Java, while for web and management systems, I focused on
+                        Laravel. Additionally, I'm currently working part-time at an IT company, where I'm learning from
+                        real-world environments.
                     </p>
                 </section>
                 <div class="section pb-0">
@@ -93,11 +96,12 @@ require("src/utility.php");
                         <div class="card-header">
                             <p class="card-header-title">Birth</p>
                         </div>
-                        <div class="card-content">
+                        <div class="card-content pt-1">
                             <div class="content">
                                 <p>
                                     <strong>Born on August 24, 2003</strong> <small>@</small>
                                     <small>Japan</small>
+                                    <i>誕生</i>
                                     <br />
                                 </p>
                             </div>
@@ -109,11 +113,12 @@ require("src/utility.php");
                         <div class="card-header">
                             <p class="card-header-title">Started Elementary School</p>
                         </div>
-                        <div class="card-content">
+                        <div class="card-content pt-1">
                             <div class="content">
                                 <p>
                                     <strong>2010 -</strong> <small>@Public Elementary School</small>
                                     <small>Japan</small>
+                                    <i>公立小学校入学</i>
                                     <br />
                                     Served as Club President and Class Representative.
                                 </p>
@@ -126,13 +131,15 @@ require("src/utility.php");
                         <div class="card-header">
                             <p class="card-header-title">Arduino</p>
                         </div>
-                        <div class="card-content">
+                        <div class="card-content pt-1">
                             <div class="content">
                                 <p>
                                     <strong>2013 ? -</strong> <small>@Home</small>
                                     <small>Japan</small>
+                                    <i>Arduinoを触る</i>
                                     <br />
-                                    Developed an interest in electronic engineering, so I had my parents buy me an Arduino. 
+                                    Developed an interest in electronic engineering, so I had my parents buy me an
+                                    Arduino.
                                     Initially, I created simple systems based on reference books.
                                 </p>
                             </div>
@@ -144,11 +151,12 @@ require("src/utility.php");
                         <div class="card-header">
                             <p class="card-header-title">Ended Elementary School</p>
                         </div>
-                        <div class="card-content">
+                        <div class="card-content pt-1">
                             <div class="content">
                                 <p>
                                     <strong>- 2016</strong> <small>@Public Elementary School</small>
                                     <small>Japan</small>
+                                    <i>公立小学校卒業</i>
                                     <br />
                                 </p>
                             </div>
@@ -160,13 +168,15 @@ require("src/utility.php");
                         <div class="card-header">
                             <p class="card-header-title">Started Middle School</p>
                         </div>
-                        <div class="card-content">
+                        <div class="card-content pt-1">
                             <div class="content">
                                 <p>
                                     <strong>2016 - 2019</strong> <small>@Public Middle School</small>
                                     <small>Japan</small>
+                                    <i>公立中学校</i>
                                     <br />
-                                    Played tennis for three years and served as a student council officer, helping to manage the student council.
+                                    Played tennis for three years and served as a student council officer, helping to
+                                    manage the student council.
                                 </p>
                             </div>
                         </div>
@@ -177,13 +187,52 @@ require("src/utility.php");
                         <div class="card-header">
                             <p class="card-header-title">Started High School</p>
                         </div>
-                        <div class="card-content">
+                        <div class="card-content pt-1">
                             <div class="content">
                                 <p>
                                     <strong>2019 -</strong> <small>@Saitama Sakae High School</small>
                                     <small>Japan</small>
+                                    <i>私立高等学校入学</i>
                                     <br />
-                                    In high school, I served as a student council officer for two years. Additionally, I proposed and implemented an eco-project.
+                                    In high school, I served as a student council officer for two years. Additionally, I
+                                    proposed and implemented an eco-project.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="card is-hidden1">
+                        <div class="card-header">
+                            <p class="card-header-title">Started Discord Bot</p>
+                        </div>
+                        <div class="card-content pt-1">
+                            <div class="content">
+                                <p>
+                                    <strong>2020 -</strong> <small>@Home</small>
+                                    <small>Japan</small>
+                                    <i>Discord Bot提供開始</i>
+                                    <br />
+                                    Started providing management bots on Discord.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="card is-hidden1">
+                        <div class="card-header">
+                            <p class="card-header-title">Appointed as an Executive Officer at an LLC.</p>
+                        </div>
+                        <div class="card-content pt-1">
+                            <div class="content">
+                                <p>
+                                    <strong>2021.12 -</strong> <small>@Imaginic LLC.</small>
+                                    <small>Japan</small>
+                                    <i>業務執行社員に着任</i>
+                                    <br />
+                                    Appointed as an Executive Officer at Imaginic LLC, primarily overseeing the IT
+                                    department.
                                 </p>
                             </div>
                         </div>
@@ -194,11 +243,12 @@ require("src/utility.php");
                         <div class="card-header">
                             <p class="card-header-title">Ended High School</p>
                         </div>
-                        <div class="card-content">
+                        <div class="card-content pt-1">
                             <div class="content">
                                 <p>
                                     <strong>- 2022</strong> <small>@Saitama Sakae High School</small>
                                     <small>Japan</small>
+                                    <i>私立高等学校卒業</i>
                                     <br />
                                 </p>
                             </div>
@@ -208,17 +258,77 @@ require("src/utility.php");
 
                     <div class="card is-hidden1">
                         <div class="card-header">
-                            <p class="card-header-title">University</p>
+                            <p class="card-header-title">Started University</p>
                         </div>
-                        <div class="card-content">
-                            <div class="content">Content</div>
+                        <div class="card-content pt-1">
+                            <div class="content">
+                                <p>
+                                    <strong>2022 -</strong> <small>@Chiba Institute Of Technology School</small>
+                                    <small>Japan</small>
+                                    <i>大学入学</i>
+                                    <br />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card is-hidden1">
+                        <div class="card-header">
+                            <p class="card-header-title">Founded an circle.</p>
+                        </div>
+                        <div class="card-content pt-1">
+                            <div class="content">
+                                <p>
+                                    <strong>2022 -</strong> <small>@Chiba Institute Of Technology School</small>
+                                    <small>Japan</small>
+                                    <i>サークル設立</i>
+                                    <br />
+                                    Co-founded an IT circle called "ITsystemLab" with fellow students.
+                                    We collaboratively worked on projects and utilized them in real-world scenarios such
+                                    as school festivals.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <br />
-                    2016 - 2019 // 中学
-                    2019 - 2022 // 高校
-                    2022 - 2026予定 // 高校
 
+                    <div class="card is-hidden1">
+                        <div class="card-header">
+                            <p class="card-header-title">Our Discord Bot has surpassed 10,000 users.</p>
+                        </div>
+                        <div class="card-content pt-1">
+                            <div class="content">
+                                <p>
+                                    <strong>2023 -</strong> <small>@Home</small>
+                                    <small>Japan</small>
+                                    <i>Discord Bot利用者 1万人超える</i>
+                                    <br />
+                                    Our Discord Bot surpassed 10,000 users.
+                                    While I'm thrilled, there are still many areas for improvement, so I will continue
+                                    to update it regularly.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="card is-hidden1">
+                        <div class="card-header">
+                            <p class="card-header-title">Part-time job at an IT company.</p>
+                        </div>
+                        <div class="card-content pt-1">
+                            <div class="content">
+                                <p>
+                                    <strong>2024 -</strong> <small>@</small>
+                                    <small>Japan</small>
+                                    <i>IT企業にアルバイト</i>
+                                    <br />
+                                    I'm working part-time at an IT company, where I'm gaining practical experience by developing full-stack web applications and working on various web-related tasks.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
                 </div>
             </div>
 
@@ -257,7 +367,7 @@ require("src/utility.php");
             </div>
         </nav>
     </main>
-    <?=html_footer()?>
+    <?= html_footer() ?>
 </body>
 
 </html>
