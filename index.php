@@ -319,7 +319,7 @@ require ("src/utility.php");
                         <div class="card-content pt-1">
                             <div class="content">
                                 <p>
-                                    <strong>2024 -</strong> <small>@</small>
+                                    <strong>2024 -</strong> <small>@Tokyo</small>
                                     <small>Japan</small>
                                     <i>IT企業にアルバイト</i>
                                     <br />
