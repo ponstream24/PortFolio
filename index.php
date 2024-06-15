@@ -1,6 +1,50 @@
 <?php
 
-require ("src/utility.php");
+require("src/utility.php");
+
+$skills = [
+    "Tool" => [
+        "Git" => "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+        "npm" => "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
+        "Visual Studio Code" => "img/vscode.svg",
+        "Visual Studio"  => "https://visualstudio.microsoft.com/wp-content/uploads/2021/10/Product-Icon.svg",
+        "IntelliJ IDEA" => "https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg",
+        "DataGrip" => "https://resources.jetbrains.com/storage/products/company/brand/logos/DataGrip_icon.svg",
+        "PhpStorm" => "https://resources.jetbrains.com/storage/products/company/brand/logos/PhpStorm_icon.svg",
+        "VirtualBox" => "https://www.vectorlogo.zone/logos/virtualbox/virtualbox-icon.svg",
+        "Dropbox" => "https://www.vectorlogo.zone/logos/dropbox/dropbox-icon.svg",
+        "Canva" => "img/canva.svg",
+        "Adobe" => "https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Web_Logo.svg",
+        "Slack" => "https://www.vectorlogo.zone/logos/slack/slack-icon.svg",
+        "Asana" => "https://brand.asana.biz/image/upload/fl_preserve_transparency/v1715795584/Asana-Logo-Horizontal-Bright-Coral-SVG.jpg?_s=public-apps",
+        "Discord.js" => "https://camo.githubusercontent.com/94402c561f7851d7d3c899ea70b282bd177f344319f08cb1d743de36f00cf020/68747470733a2f2f646973636f72642e6a732e6f72672f7374617469632f6c6f676f2e737667",
+    ],
+
+    "Language" => [
+        "PHP" => "https://www.php.net/images/logos/new-php-logo.svg",
+        "JavaScript" => "https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
+        "Java" => "https://www.vectorlogo.zone/logos/java/java-icon.svg",
+        "C" => "https://cdn.worldvectorlogo.com/logos/c-1.svg",
+        "C++" => "https://cdn.worldvectorlogo.com/logos/c.svg",
+        "Python" => "https://www.vectorlogo.zone/logos/python/python-icon.svg",
+        "Node.js" => "https://nodejs.org/static/logos/nodejsLight.svg",
+    ],
+
+    "Service" => [
+        "GitHub" => "img/github.svg",
+        "Laravel" => "img/laravel.svg",
+        "Apache" => "https://www.apache.org/foundation/press/kit/asf_logo.svg",
+        "Linux" => "https://www.vectorlogo.zone/logos/linux/linux-icon.svg",
+        "Ubuntu" => "https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg",
+        "macOS" => "https://www.vectorlogo.zone/logos/apple/apple-icon.svg",
+        "MySQL" => "https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg",
+        "H2" => "https://www.vectorlogo.zone/logos/h2database/h2database-icon.svg",
+        "Bukkit" => "https://www.vectorlogo.zone/logos/bukkit/bukkit-icon.svg",
+        "Spigot" => "https://www.vectorlogo.zone/logos/spigotmc/spigotmc-icon.svg",
+        "Discord" => "https://www.vectorlogo.zone/logos/discordapp/discordapp-icon.svg",
+        "JetBrains" => "https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg"
+    ]
+];
 
 ?>
 
@@ -88,9 +132,6 @@ require ("src/utility.php");
                     <section class="mb-5">
                         <h2 class="title is-2">My History</h2>
                         <h6 class="subtitle is-6">Life's <strong>Journey</strong></h6>
-                        <!-- <p>
-                            This is my life.
-                        </p> -->
                     </section>
                     <div class="card">
                         <div class="card-header">
@@ -329,6 +370,43 @@ require ("src/utility.php");
                         </div>
                     </div>
                     <br />
+                </div>
+                <div class="section pb-0">
+                    <section class="mb-5">
+                        <h2 class="title is-2">My Skill</h2>
+                        <h6 class="subtitle is-6">Life's <strong>Journey</strong></h6>
+                        <p>どの言語が使えるか、どんなツールが使えるか、githubの画像を持ってくる</p>
+                    </section>
+                    <div class="columns is-multiline">
+                        <?php foreach ($skills as $name => $a) : ?>
+                            <?php foreach ($a as $key => $value) : ?>
+                                <div class="column is-one-fifth">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <figure class="image is-4by3 ">
+                                                <img 
+                                                    src="<?= $value ?>" 
+                                                    alt="<?= $key ?>"
+                                                    class="p-4"
+                                                    style="
+                                                        object-fit: contain;
+                                                    "
+                                                >
+                                            </figure>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="media">
+                                                <div class="media-content">
+                                                    <p class="title is-4 is-size-6"><?= $key ?></p>
+                                                    <p class="subtitle is-6">#<?= $name ?></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endforeach ?>
+                        <?php endforeach ?>
+                    </div>
                 </div>
             </div>
 
