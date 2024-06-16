@@ -54,7 +54,7 @@ $github = [
 ?>
 
 <!DOCTYPE html>
-<html>
+<html style="scroll-behavior: smooth;">
 
 <?= html_head("About") ?>
 
@@ -78,7 +78,7 @@ $github = [
                     </div>
                     <div class="container section pt-0">
                         <div class="content">
-                            <h2>Yuki Tetsuka</h2>
+                            <h2 id="about">Yuki Tetsuka</h2>
                             <p>
                                 <span class="icon">
                                     <a class="navbar-item" href="https://github.com/ponstream24" target="_blank">
@@ -135,7 +135,7 @@ $github = [
                 </section>
                 <div class="section pb-0">
                     <section class="mb-5">
-                        <h2 class="title is-2">My History</h2>
+                        <h2 class="title is-2" id="myhistory">My History</h2>
                         <h6 class="subtitle is-6">Life's <strong>Journey</strong></h6>
                     </section>
                     <div class="card">
@@ -378,7 +378,7 @@ $github = [
                 </div>
                 <div class="section pb-0">
                     <section class="mb-5">
-                        <h2 class="title is-2">My Skill</h2>
+                        <h2 class="title is-2" id="skill">My Skill</h2>
                         <h6 class="subtitle is-6">Life's <strong>Journey</strong></h6>
                         <p>どの言語が使えるか、どんなツールが使えるか、githubの画像を持ってくる</p>
                     </section>
@@ -410,7 +410,7 @@ $github = [
                 </div>
                 <div class="section pb-0">
                     <section class="mb-5">
-                        <h2 class="title is-2">My Count</h2>
+                        <h2 class="title is-2" id="mycount">My Count</h2>
                         <h6 class="subtitle is-6">Count related to me.</h6>
                     </section>
                     <nav class="level">
@@ -432,7 +432,7 @@ $github = [
                 </div>
                 <div class="section pb-0">
                     <section class="mb-5">
-                        <h2 class="title is-2">My GitHub</h2>
+                        <h2 class="title is-2" id="mygithub">My GitHub</h2>
                         <h6 class="subtitle is-6">My GitHub status.</h6>
                     </section>
                     <div class="columns is-multiline">
