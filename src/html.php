@@ -7,12 +7,10 @@ echo <<<HTML
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>$title - Yuki Tetsuka</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-        <!-- <script src="https://kit.fontawesome.com/64b13ac423.js" crossorigin="anonymous"></script> -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
 HTML;
 }
-
 
 function html_header(){
     echo <<<HTML
@@ -32,19 +30,21 @@ function html_header(){
 function html_sidebar($active){
 
 echo <<<HTML
-
-            <aside class="menu">
+            <aside class="menu"
+            style="">
                 <p class="menu-label">General</p>
                 <ul class="menu-list">
-                    <li><a>About</a></li>
-                    <li><a>History</a></li>
-                    <li><a>Skill</a></li>
+                    <li><a class="is-active" href="./#about">About</a></li>
+                    <li><a href="./#myhistory">History</a></li>
+                    <li><a href="./#skill">Skill</a></li>
+                    <li><a href="./#mycount">Count</a></li>
+                    <li><a href="./#mygithub">Github</a></li>
                 </ul>
                 <p class="menu-label">Administration</p>
                 <ul class="menu-list">
                     <li><a>Team Settings</a></li>
                     <li>
-                        <a class="is-active">Manage Your Team</a>
+                        <a >Manage Your Team</a>
                         <ul>
                             <li><a>Members</a></li>
                             <li><a>Plugins</a></li>
