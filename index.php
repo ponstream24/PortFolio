@@ -55,7 +55,7 @@ $skills = [
 
 <body>
     <?= html_header() ?>
-    <main>
+    <main class="mb-6">
         <section class="section main-content columns pb-0">
 
             <?= html_sidebar("about") ?>
@@ -384,14 +384,9 @@ $skills = [
                                     <div class="card">
                                         <div class="card-image">
                                             <figure class="image is-4by3 ">
-                                                <img 
-                                                    src="<?= $value ?>" 
-                                                    alt="<?= $key ?>"
-                                                    class="p-4"
-                                                    style="
+                                                <img src="<?= $value ?>" alt="<?= $key ?>" class="p-4" style="
                                                         object-fit: contain;
-                                                    "
-                                                >
+                                                    ">
                                             </figure>
                                         </div>
                                         <div class="card-content">
@@ -408,42 +403,31 @@ $skills = [
                         <?php endforeach ?>
                     </div>
                 </div>
+                <div class="section pb-0">
+                    <section class="mb-5">
+                        <h2 class="title is-2">My Count</h2>
+                        <h6 class="subtitle is-6">Count related to me.</h6>
+                    </section>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <div>
+                                <p class="heading">Domains</p>
+                                <p class="title">12 Actives</p>
+                                <p>and 13 inactive ones</p>
+                            </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                            <div>
+                                <p class="heading">Cloud Servers</p>
+                                <p class="title">7 Actives</p>
+                                <p>Web Server and VPS</p>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
             </div>
 
         </section>
-        <section class="section is-medium">
-            <h1 class="title">Section</h1>
-            <h2 class="subtitle">
-                A simple container to divide your page into <strong>sections</strong>, like
-                the one you're currently reading.
-            </h2>
-        </section>
-        <nav class="level">
-            <div class="level-item has-text-centered">
-                <div>
-                    <p class="heading">Tweets</p>
-                    <p class="title">3,456</p>
-                </div>
-            </div>
-            <div class="level-item has-text-centered">
-                <div>
-                    <p class="heading">Following</p>
-                    <p class="title">123</p>
-                </div>
-            </div>
-            <div class="level-item has-text-centered">
-                <div>
-                    <p class="heading">Followers</p>
-                    <p class="title">456K</p>
-                </div>
-            </div>
-            <div class="level-item has-text-centered">
-                <div>
-                    <p class="heading">Likes</p>
-                    <p class="title">789</p>
-                </div>
-            </div>
-        </nav>
     </main>
     <?= html_footer() ?>
 </body>
