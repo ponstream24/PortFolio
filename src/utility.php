@@ -9,8 +9,6 @@ date_default_timezone_set ('Asia/Tokyo');
 $_src = pathinfo(__FILE__, PATHINFO_DIRNAME);
 // $_src = "src/";
 
-loadPHPFileAll($_src);
-
 // 下層含めて全てのPHP読み込み
 function loadPHPFileAll($_src){
 
@@ -56,3 +54,6 @@ if( !function_exists("str_ends_with") ){
         return (substr($haystack, -$length) === $needle);
     }
 }
+
+
+loadPHPFileAll($_src);

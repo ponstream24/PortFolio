@@ -36,14 +36,17 @@ $skills = [
         "Apache" => "https://www.apache.org/foundation/press/kit/asf_logo.svg",
         "Linux" => "https://www.vectorlogo.zone/logos/linux/linux-icon.svg",
         "Ubuntu" => "https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg",
-        "macOS" => "https://www.vectorlogo.zone/logos/apple/apple-icon.svg",
-        "MySQL" => "https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg",
+        "macOS" => "img/mac.svg",
+        "MySQL" => "img/mysql.svg",
+        "phpMyAdmin" => "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/PhpMyAdmin_logo.svg/800px-PhpMyAdmin_logo.svg",
         "H2" => "https://www.vectorlogo.zone/logos/h2database/h2database-icon.svg",
         "Bukkit" => "https://www.vectorlogo.zone/logos/bukkit/bukkit-icon.svg",
         "Spigot" => "https://www.vectorlogo.zone/logos/spigotmc/spigotmc-icon.svg",
         "Discord" => "https://www.vectorlogo.zone/logos/discordapp/discordapp-icon.svg",
         "JetBrains" => "https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg"
     ]
+
+    // gas, windows, youtube, LINE, LINE Dev, 
 ];
 
 $github = [
