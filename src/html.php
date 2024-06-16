@@ -76,5 +76,36 @@ function html_footer(){
             </p>
         </div>
     </footer>
-    HTML;
-    }
+
+    <button id="back-to-top" class="button is-primary"
+    style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        font-size: larger;
+        padding: 10px;
+        border-radius: 50%;
+        display: flex;
+    ">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
+
+    <script>
+        // スクロールイベントを監視してボタンの表示/非表示を切り替える
+        window.addEventListener('scroll', function() {
+            var button = document.getElementById('back-to-top');
+            if (window.pageYOffset > 100) {
+                button.style.display = 'flex';
+            } else {
+                button.style.display = 'none';
+            }
+        });
+
+        // ボタンをクリックしたときにページの上部にスクロールする
+        document.getElementById('back-to-top').addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+HTML;
+}
