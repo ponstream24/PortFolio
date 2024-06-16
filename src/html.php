@@ -7,12 +7,10 @@ echo <<<HTML
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>$title - Yuki Tetsuka</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-        <!-- <script src="https://kit.fontawesome.com/64b13ac423.js" crossorigin="anonymous"></script> -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
 HTML;
 }
-
 
 function html_header(){
     echo <<<HTML
@@ -32,23 +30,22 @@ function html_header(){
 function html_sidebar($active){
 
 echo <<<HTML
-
-            <aside class="menu">
+            <aside class="menu"
+            style="">
                 <p class="menu-label">General</p>
                 <ul class="menu-list">
-                    <li><a>About</a></li>
-                    <li><a>History</a></li>
-                    <li><a>Skill</a></li>
+                    <li><a id="page_about" href="./#about">About</a></li>
+                    <li><a id="page_myhistory" href="./#myhistory">History</a></li>
+                    <li><a id="page_skill" href="./#skill">Skill</a></li>
+                    <li><a id="page_mycount" href="./#mycount">Count</a></li>
+                    <li><a id="page_mygithub" href="./#mygithub">Github</a></li>
                 </ul>
-                <p class="menu-label">Administration</p>
+                <p class="menu-label">Contents</p>
                 <ul class="menu-list">
-                    <li><a>Team Settings</a></li>
                     <li>
-                        <a class="is-active">Manage Your Team</a>
+                        <a>Web System</a>
                         <ul>
-                            <li><a>Members</a></li>
-                            <li><a>Plugins</a></li>
-                            <li><a>Add a member</a></li>
+                            <li><a id="page_sso">Single Sign-On</a></li>
                         </ul>
                     </li>
                     <li><a>Invitations</a></li>
@@ -62,12 +59,15 @@ echo <<<HTML
                     <li><a>Balance</a></li>
                 </ul>
             </aside>
+            <script>
+                document.getElementById("page_{$active}").classList.add("is-active");
+            </script>
 HTML;
 }
 
 function html_footer(){
-    echo <<<HTML
-        <footer class="footer">
+echo <<<HTML
+    <footer class="footer">
         <div class="content has-text-centered">
             <p>
                 I am <strong>Y</strong>uki <strong>T</strong>etsuka.
@@ -76,5 +76,36 @@ function html_footer(){
             </p>
         </div>
     </footer>
-    HTML;
-    }
+
+    <button id="back-to-top" class="button is-primary"
+    style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        font-size: larger;
+        padding: 10px;
+        border-radius: 50%;
+        display: flex;
+    ">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
+
+    <script>
+        // スクロールイベントを監視してボタンの表示/非表示を切り替える
+        window.addEventListener('scroll', function() {
+            var button = document.getElementById('back-to-top');
+            if (window.pageYOffset > 100) {
+                button.style.display = 'flex';
+            } else {
+                button.style.display = 'none';
+            }
+        });
+
+        // ボタンをクリックしたときにページの上部にスクロールする
+        document.getElementById('back-to-top').addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+HTML;
+}
