@@ -406,8 +406,7 @@ $skills = [
                 <div class="section pb-0">
                     <section class="mb-5">
                         <h2 class="title is-2">My Count</h2>
-                        <h6 class="subtitle is-6">Life's <strong>Journey</strong></h6>
-                        <p>どの言語が使えるか、どんなツールが使えるか、githubの画像を持ってくる</p>
+                        <h6 class="subtitle is-6">Count related to me.</h6>
                     </section>
                     <nav class="level">
                         <div class="level-item has-text-centered">
