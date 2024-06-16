@@ -46,6 +46,11 @@ $skills = [
     ]
 ];
 
+$github = [
+    "https://github-readme-stats-ponstream24s-projects.vercel.app/api?count_private=true&username=",
+    "https://github-readme-stats-ponstream24s-projects.vercel.app/api/top-langs/?layout=compact&count_private=true&username=",
+];
+
 ?>
 
 <!DOCTYPE html>
@@ -424,6 +429,28 @@ $skills = [
                             </div>
                         </div>
                     </nav>
+                </div>
+                <div class="section pb-0">
+                    <section class="mb-5">
+                        <h2 class="title is-2">My GitHub</h2>
+                        <h6 class="subtitle is-6">My GitHub status.</h6>
+                    </section>
+                    <div class="columns is-multiline">
+                        <?php foreach ($github as $url) : ?>
+                            <div class="column is-half">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <figure class="image is-2by1 ">
+                                            <a href="http://github.com/ponstream24" target="_blank" rel="noopener noreferrer">
+                                                <img src="
+                                                <?=$url?>ponstream24" class="p-4">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endforeach?>
+                    </div>
                 </div>
             </div>
 
