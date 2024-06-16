@@ -34,21 +34,18 @@ echo <<<HTML
             style="">
                 <p class="menu-label">General</p>
                 <ul class="menu-list">
-                    <li><a class="is-active" href="./#about">About</a></li>
-                    <li><a href="./#myhistory">History</a></li>
-                    <li><a href="./#skill">Skill</a></li>
-                    <li><a href="./#mycount">Count</a></li>
-                    <li><a href="./#mygithub">Github</a></li>
+                    <li><a id="page_about" href="./#about">About</a></li>
+                    <li><a id="page_myhistory" href="./#myhistory">History</a></li>
+                    <li><a id="page_skill" href="./#skill">Skill</a></li>
+                    <li><a id="page_mycount" href="./#mycount">Count</a></li>
+                    <li><a id="page_mygithub" href="./#mygithub">Github</a></li>
                 </ul>
-                <p class="menu-label">Administration</p>
+                <p class="menu-label">Contents</p>
                 <ul class="menu-list">
-                    <li><a>Team Settings</a></li>
                     <li>
-                        <a >Manage Your Team</a>
+                        <a>Web System</a>
                         <ul>
-                            <li><a>Members</a></li>
-                            <li><a>Plugins</a></li>
-                            <li><a>Add a member</a></li>
+                            <li><a id="page_sso">Single Sign-On</a></li>
                         </ul>
                     </li>
                     <li><a>Invitations</a></li>
@@ -62,12 +59,15 @@ echo <<<HTML
                     <li><a>Balance</a></li>
                 </ul>
             </aside>
+            <script>
+                document.getElementById("page_{$active}").classList.add("is-active");
+            </script>
 HTML;
 }
 
 function html_footer(){
-    echo <<<HTML
-        <footer class="footer">
+echo <<<HTML
+    <footer class="footer">
         <div class="content has-text-centered">
             <p>
                 I am <strong>Y</strong>uki <strong>T</strong>etsuka.
