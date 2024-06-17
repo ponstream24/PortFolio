@@ -40,9 +40,9 @@ $skills = [
         "MySQL" => "img/mysql.svg",
         "phpMyAdmin" => "https://raw.githubusercontent.com/phpmyadmin/data/5e47db9db9b4bcd5de3f174017e4968409b1b1f1/shirt_back_render.svg",
         "H2" => "https://github.com/h2database/h2database.github.io/blob/main/html/images/h2-logo_square.png?raw=true",
-        "Bukkit" => "https://www.vectorlogo.zone/logos/bukkit/bukkit-icon.svg",
-        "Spigot" => "https://www.vectorlogo.zone/logos/spigotmc/spigotmc-icon.svg",
-        "Discord" => "https://www.vectorlogo.zone/logos/discordapp/discordapp-icon.svg",
+        "Bukkit" => "https://media.forgecdn.net/attachments/125/517/bukkit.png",
+        "Spigot" => "https://avatars.githubusercontent.com/u/4350249",
+        "Discord" => "img/discord.svg",
         "JetBrains" => "https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg"
     ]
 
