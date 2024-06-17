@@ -45,6 +45,7 @@ echo <<<HTML
                     <li>
                         <a>Web System</a>
                         <ul>
+                            <li><a id="page_shorturl" href="./shorturl">URL短縮ツール</a></li>
                             <li><a id="page_sso">Single Sign-On</a></li>
                         </ul>
                     </li>
