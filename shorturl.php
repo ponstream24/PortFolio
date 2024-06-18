@@ -28,30 +28,26 @@ require("src/utility.php");
                 </section>
                 <section class="section">
                     <div class="content">
-                        <h2 id="about">Yuki Tetsuka</h2>
+                        <p class="title"><ruby>短縮<rt>たんしゅ</rt></ruby>っくん</p>
+                        <p class="subtitle">URL短縮ツール</p>
                         <p>
-                            <span class="icon">
-                                <a class="navbar-item" href="https://github.com/ponstream24" target="_blank">
-                                    <i class='bx bxl-github'></i>
-                                </a>
-                            </span>
-                            <span class="icon">
-                                <a class="navbar-item" href="https://yukitetsuka.com" target="_blank">
-                                    <i class='bx bx-link'></i>
-                                </a>
-                            </span>
-                            <span class="icon">
-                                <a class="navbar-item" href="https://note.com/yukitetsuka/" target="_blank">
-                                    <i class='bx bx-note'></i>
-                                </a>
-                            </span>
+                            <small>#URL</small>
+                            <small>#WebApp</small>
+                            <small>#Tool</small>
+                            <small>#Analytics</small>
+                            <small>#Short</small>
+                            <small>#GUI</small>
                         </p>
                         <p>
-                            <strong>University Student</strong> <small>@Chiba Institute Of Technology</small>
-                            <small>Japan</small>
+                            <strong>概要（利用者目線）</strong>
                             <br />
-                            Studying internet and IT systems at a university in Chiba.
-                            Additionally, researching multimedia and infrastructure, such as CG, in the laboratory.
+                            「短縮っくん」はDataBaseが使えないなどの格安レンタルWebサーバーでも使えるように、すべて
+                        </p>
+                        <p>
+                            <strong>技術（開発者目線）</strong>
+                            <br />
+                            「短縮っくん」はDataBaseが使えないなどの格安レンタルWebサーバーでも使えるように、すべてテキストベースでデータを保存しています。
+                            その際に、ユーザー名やパスワードを暗号化や.htaccessにてアクセス制限を行うなどセキュリティ面でも意識しています。
                         </p>
                         <p>
                             <strong>Executive Officer</strong> <small>@Imaginic LLC.</small>
