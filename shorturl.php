@@ -62,8 +62,7 @@ $github = [
                     <div class="card">
                         <div class="card-image">
                             <figure class="image is-fullwidth">
-                                <img src="https://bulma.io/assets/images/placeholders/1280x960.png"
-                                    alt="Placeholder image" />
+                                <img src="img/contents/shorturl/6.png"/>
                             </figure>
                         </div>
                     </div>
