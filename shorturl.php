@@ -140,41 +140,22 @@ $github = [
                         <h2 class="title is-2" id="myhistory">Description</h2>
                     </section>
                     <div class="columns is-multiline">
-                        <div class="column is-half">
-                            <div class="card">
-                                <div class="card-image">
-                                    <figure class="image is-4by3 ">
-                                        <img src="img/contents/shorturl/1.png" style="
-                                                object-fit: contain;
-                                            ">
-                                    </figure>
-                                </div>
-                                <div class="card-content">
-                                    <div class="media">
-                                        <div class="media-content">
-                                            <p class="title is-4 is-size-6">ログイン</p>
-                                            <p class="subtitle is-6">
-                                                アクセス時にユーザー認証を表示しスパムや大量作成の迷惑行為、短縮URLが犯罪に使用されることを防いでいます</p>
-                                        </div>
+                        <?php foreach ($descriptions as $value) : ?>
+                            <div class="column is-half">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <figure class="image is-4by3 ">
+                                            <img src="<?=$value["img"]?>" style="
+                                                    object-fit: contain;
+                                                ">
+                                        </figure>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-half">
-                            <div class="card">
-                                <div class="card-image">
-                                    <figure class="image is-4by3 ">
-                                        <img src="img/contents/shorturl/2.png" style="
-                                                object-fit: contain;
-                                            ">
-                                    </figure>
-                                </div>
-                                <div class="card-content">
-                                    <div class="media">
-                                        <div class="media-content">
-                                            <p class="title is-4 is-size-6">二要素認証</p>
-                                            <p class="subtitle is-6">
-                                            本人確認のための二要素認証として、メールに確認コードを送信しています。</p>
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-content">
+                                                <p class="title is-4 is-size-6"><?=$value["title"]?></p>
+                                                <p class="subtitle is-6"><?=$value["subtitle"]?></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
