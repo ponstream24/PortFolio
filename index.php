@@ -69,7 +69,7 @@ $skills = [
 ];
 
 $github = [
-    "https://github-readme-stats-ponstream24s-projects.vercel.app/api?count_private=true&username=",
+    "https://github-readme-stats-ponstream24s-projects.vercel.app/api?count_private=true&include_all_commits=true&username=",
     "https://github-readme-stats-ponstream24s-projects.vercel.app/api/top-langs/?layout=compact&count_private=true&username=",
 ];
 
