@@ -171,16 +171,16 @@ $github = [
                     <nav class="level">
                         <div class="level-item has-text-centered">
                             <div>
-                                <p class="heading">Domains</p>
-                                <p class="title">12 Actives</p>
-                                <p>and 13 inactive ones</p>
+                                <p class="heading">Use</p>
+                                <p class="title">7 Actives</p>
+                                <p>and 0 inactive ones</p>
                             </div>
                         </div>
                         <div class="level-item has-text-centered">
                             <div>
-                                <p class="heading">Cloud Servers</p>
-                                <p class="title">7 Actives</p>
-                                <p>Web Server and VPS</p>
+                                <p class="heading">Developer of this project</p>
+                                <p class="title">1 person</p>
+                                <p>Just myself</p>
                             </div>
                         </div>
                     </nav>
