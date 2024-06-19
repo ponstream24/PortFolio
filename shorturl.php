@@ -128,6 +128,9 @@ $github = [
                             <li>
                                 パーミッションの計算には<b>2の冪乗</b>を使用
                             </li>
+                            <li>
+                                <b>Google Analyticsのトラッキングコード</b>に対応しているため、簡単にGoogleWorkspaceと連携ができます。
+                            </li>
                         </ul>
                         </p>
                     </div>
