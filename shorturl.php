@@ -2,6 +2,47 @@
 
 require ("src/utility.php");
 
+$descriptions = [
+    [
+        "img" => "img/contents/shorturl/1.png",
+        "title" => "ログイン",
+        "subtitle" => "アクセス時にユーザー認証を表示しスパムや大量作成の迷惑行為、短縮URLが犯罪に使用されることを防いでいます。",
+    ],
+    [
+        "img" => "img/contents/shorturl/2.png",
+        "title" => "二要素認証",
+        "subtitle" => "本人確認のための二要素認証として、メールに確認コードを送信しています。",
+    ],
+    [
+        "img" => "img/contents/shorturl/3.png",
+        "title" => "パスワード変更",
+        "subtitle" => "簡単に何度でもパスワードを変更できます。また暗号化してファイル保存を行っているためセキュリティ面でも安心です。",
+    ],
+    [
+        "img" => "img/contents/shorturl/4.png",
+        "title" => "ユーザー追加",
+        "subtitle" => "入力フォーム一つでユーザーの追加が可能です。 またユーザー追加時のパーミッション等は2のべき乗で構成された数字なるので、 マニュアルを作成する際は項目を何個も選択する必要がなく、数字一つで権限設定が完了します。",
+    ],
+    [
+        "img" => "img/contents/shorturl/5.png",
+        "title" => "ユーザー編集",
+        "subtitle" => "登録したユーザーの編集も可能です。",
+    ],
+    [
+        "img" => "img/contents/shorturl/6.png",
+        "title" => "URL登録",
+        "subtitle" => "追加する短縮URLの[Short Word]は指定ありでもなしでも大丈夫です。○○.com/youtubeや○○.com/instagramなど、自身のSNSのURLに設定にぴったりです。",
+    ],
+    [
+        "img" => "img/contents/shorturl/7.png",
+        "title" => "URL統計",
+        "subtitle" => "作成したURLのアクセス状況を確認できます。短縮URLを設置する場所/HPなどが複数ある場合、それぞれ用にURLを生成することで、アクセスした人がどこから来たのかをカウントすることが可能です。",
+    ],
+];
+
+$github = [
+    "https://github-readme-stats-ponstream24s-projects.vercel.app/api/pin/?repo=ShortURLTool&count_private=true&show_owner=true&username=",
+];
 ?>
 
 <!DOCTYPE html>
