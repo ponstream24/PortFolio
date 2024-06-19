@@ -160,109 +160,13 @@ $github = [
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="column is-half">
-                            <div class="card">
-                                <div class="card-image">
-                                    <figure class="image is-4by3 ">
-                                        <img src="img/contents/shorturl/3.png" style="
-                                                object-fit: contain;
-                                            ">
-                                    </figure>
-                                </div>
-                                <div class="card-content">
-                                    <div class="media">
-                                        <div class="media-content">
-                                            <p class="title is-4 is-size-6">パスワード変更</p>
-                                            <p class="subtitle is-6">
-                                            簡単に何度でもパスワードを変更できます。また暗号化してファイル保存を行っているためセキュリティ面でも安心です。</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-half">
-                            <div class="card">
-                                <div class="card-image">
-                                    <figure class="image is-4by3 ">
-                                        <img src="img/contents/shorturl/4.png" style="
-                                                object-fit: contain;
-                                            ">
-                                    </figure>
-                                </div>
-                                <div class="card-content">
-                                    <div class="media">
-                                        <div class="media-content">
-                                            <p class="title is-4 is-size-6">ユーザー追加</p>
-                                            <p class="subtitle is-6">
-                                            入力フォーム一つでユーザーの追加が可能です。
-                                            またユーザー追加時のパーミッション等は2のべき乗で構成された数字なるので、
-                                            マニュアルを作成する際は項目を何個も選択する必要がなく、数字一つで権限設定が完了します。</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-half">
-                            <div class="card">
-                                <div class="card-image">
-                                    <figure class="image is-4by3 ">
-                                        <img src="img/contents/shorturl/4.png" style="
-                                                object-fit: contain;
-                                            ">
-                                    </figure>
-                                </div>
-                                <div class="card-content">
-                                    <div class="media">
-                                        <div class="media-content">
-                                            <p class="title is-4 is-size-6">ユーザー追加</p>
-                                            <p class="subtitle is-6">
-                                            入力フォーム一つでユーザーの追加が可能です。
-                                            またユーザー追加時のパーミッション等は2のべき乗で構成された数字なるので、
-                                            マニュアルを作成する際は項目を何個も選択する必要がなく、数字一つで権限設定が完了します。</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach?>
                     </div>
                 </div>
                 <div class="section pb-0">
                     <section class="mb-5">
-                        <h2 class="title is-2" id="skill">My Skill</h2>
-                        <h6 class="subtitle is-6">Life's <strong>Journey</strong></h6>
-                        <p>どの言語が使えるか、どんなツールが使えるか、githubの画像を持ってくる</p>
-                    </section>
-                    <div class="columns is-multiline">
-                        <?php foreach ($skills as $name => $a): ?>
-                            <?php foreach ($a as $key => $value): ?>
-                                <div class="column is-one-fifth">
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <figure class="image is-4by3 ">
-                                                <img src="<?= $value ?>" alt="<?= $key ?>" class="p-4" style="
-                                                        object-fit: contain;
-                                                    ">
-                                            </figure>
-                                        </div>
-                                        <div class="card-content">
-                                            <div class="media">
-                                                <div class="media-content">
-                                                    <p class="title is-4 is-size-6"><?= $key ?></p>
-                                                    <p class="subtitle is-6">#<?= $name ?></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            <?php endforeach ?>
-                        <?php endforeach ?>
-                    </div>
-                </div>
-                <div class="section pb-0">
-                    <section class="mb-5">
-                        <h2 class="title is-2" id="mycount">My Count</h2>
-                        <h6 class="subtitle is-6">Count related to me.</h6>
+                        <h2 class="title is-2" id="mycount">Project Count</h2>
+                        <h6 class="subtitle is-6">Count related to this project.</h6>
                     </section>
                     <nav class="level">
                         <div class="level-item has-text-centered">
