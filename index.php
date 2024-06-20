@@ -400,7 +400,6 @@ $github = [
                     <section class="mb-5">
                         <h2 class="title is-2" id="skill">My Skill</h2>
                         <h6 class="subtitle is-6">Life's <strong>Journey</strong></h6>
-                        <p>どの言語が使えるか、どんなツールが使えるか、githubの画像を持ってくる</p>
                     </section>
                     <div class="columns is-multiline">
                         <?php foreach ($skills as $name => $a) : ?>
