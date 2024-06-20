@@ -141,7 +141,7 @@ $github = [
                     </section>
                     <div class="columns is-multiline">
                         <?php foreach ($descriptions as $value) : ?>
-                            <div class="column is-half">
+                            <div class="column <?=$value["size"]??'is-half'?>">
                                 <div class="card">
                                     <div class="card-image">
                                         <figure class="image is-4by3 ">
