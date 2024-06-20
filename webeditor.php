@@ -72,7 +72,7 @@ $github = [
                             <small>#JSON</small>
                         </p>
                         <div class="buttons">
-                            <button class="button is-link" onclick="window.open('https:\/\/isedit.itsystem-lab.com')">Product</button>
+                            <button class="button is-link" onclick="window.open('https:\/\/isedit.itsystem-lab.com')">Release</button>
                         </div>
                         <p>
                             <strong>概要（利用者目線）</strong>
