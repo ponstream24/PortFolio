@@ -183,6 +183,13 @@ $github = [
                                 <p>Just myself</p>
                             </div>
                         </div>
+                        <div class="level-item has-text-centered">
+                            <div>
+                                <p class="heading">Development period</p>
+                                <p class="title">1 day</p>
+                                <p>maybe...</p>
+                            </div>
+                        </div>
                     </nav>
                 </div>
                 <div class="section pb-0">
