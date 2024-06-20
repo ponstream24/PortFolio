@@ -4,39 +4,34 @@ require("src/utility.php");
 
 $descriptions = [
     [
-        "img" => "img/contents/shorturl/2.png",
-        "title" => "二要素認証",
-        "subtitle" => "本人確認のための二要素認証として、メールに確認コードを送信しています。",
+        "img" => "img/contents/isedit/2.png",
+        "title" => "編集エリア",
+        "subtitle" => "ファイルの中身を編集できます。また、ファイル名またはインフォメーションエリアをもとに、<b>言語を特定し適切なタブ補完</b>を行っています。",
     ],
     [
-        "img" => "img/contents/shorturl/3.png",
-        "title" => "パスワード変更",
-        "subtitle" => "簡単に何度でもパスワードを変更できます。また暗号化してファイル保存を行っているためセキュリティ面でも安心です。",
+        "img" => "img/contents/isedit/3.png",
+        "title" => "ログエリア",
+        "subtitle" => "実行したスクリプトの実行結果が表示されます。JavaScriptの場合、log・error・info・warn・debugには背景色を適応させているのでより見やすくなっています。",
     ],
     [
-        "img" => "img/contents/shorturl/4.png",
-        "title" => "ユーザー追加",
-        "subtitle" => "入力フォーム一つでユーザーの追加が可能です。 またユーザー追加時のパーミッション等は2のべき乗で構成された数字なるので、 マニュアルを作成する際は項目を何個も選択する必要がなく、数字一つで権限設定が完了します。",
+        "img" => "img/contents/isedit/4.png",
+        "title" => "ファイルエリア",
+        "subtitle" => "編集するファイルを追加・変更・削除するエリアです。ファイルの追加・削除はもちろん、ファイル名の変更も行えます。その際に、変更後のファイル名に沿って言語も変更します。",
     ],
     [
-        "img" => "img/contents/shorturl/5.png",
-        "title" => "ユーザー編集",
-        "subtitle" => "登録したユーザーの編集も可能です。",
+        "img" => "img/contents/isedit/5.png",
+        "title" => "コントロールエリア",
+        "subtitle" => "スクリプトの実行・停止や、共有・ダウンロード、ログエリアの削除などエディタをコントロールするエリアです。",
     ],
     [
-        "img" => "img/contents/shorturl/6.png",
-        "title" => "URL登録",
-        "subtitle" => "追加する短縮URLの[Short Word]は指定ありでもなしでも大丈夫です。○○.com/youtubeや○○.com/instagramなど、自身のSNSのURLに設定にぴったりです。",
-    ],
-    [
-        "img" => "img/contents/shorturl/7.png",
-        "title" => "URL統計",
-        "subtitle" => "作成したURLのアクセス状況を確認できます。短縮URLを設置する場所/HPなどが複数ある場合、それぞれ用にURLを生成することで、アクセスした人がどこから来たのかをカウントすることが可能です。",
+        "img" => "img/contents/isedit/6.png",
+        "title" => "インフォメーションエリア",
+        "subtitle" => "言語の変更、テーマを変更するエリアです。また現在の文字数や、今選択している行数、列数が表示されます。",
     ],
 ];
 
 $github = [
-    "https://github-readme-stats-ponstream24s-projects.vercel.app/api/pin/?repo=ShortURLTool&count_private=true&show_owner=true&username=",
+    "https://github-readme-stats-ponstream24s-projects.vercel.app/api/pin/?repo=IsEdit&count_private=true&show_owner=true&username=",
 ];
 ?>
 
@@ -111,7 +106,7 @@ $github = [
                             <br />
                         <ul>
                             <li>
-                                JS-Interpreterを使うとこで、<p>ブラウザ標準のJavascriptに干渉せず</p>にセキュリティ面で安心
+                                JS-Interpreterを使うとこで、<b>ブラウザ標準のJavascriptに干渉せず</b>にセキュリティ面で安心
                             </li>
                             <li>
                                 MySQLにてデータを保存
@@ -174,7 +169,7 @@ $github = [
                         <div class="level-item has-text-centered">
                             <div>
                                 <p class="heading">Use</p>
-                                <p class="title">7 Actives</p>
+                                <p class="title">1 Actives</p>
                                 <p>and 0 inactive ones</p>
                             </div>
                         </div>
@@ -188,7 +183,7 @@ $github = [
                         <div class="level-item has-text-centered">
                             <div>
                                 <p class="heading">Development period</p>
-                                <p class="title">1 day</p>
+                                <p class="title">3 day</p>
                                 <p>maybe...</p>
                             </div>
                         </div>
