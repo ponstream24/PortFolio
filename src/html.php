@@ -138,7 +138,7 @@ echo <<<HTML
                         <ul>
                             <li><a id="" data-des="GoogleFormに入力された情報をDiscordに通知します。 [ GoogleForm -> Discord ]">GoogleForm -> Discord</a></li>
                             <li><a id="" data-des="学際にてキャッシュレス決済を導入しました。 [ 学際にてキャッシュレス決済を導入 ]">学際にてキャッシュレス決済を導入</a></li>
-                            <li><a id="" data-des="小学生の時にArudioにて電子工作を行いました。 [ Arudioで工作 ]">Arudioで工作</a></li>
+                            <li><a id="" data-des="小学生の時にArudioにて電子工作を行いました。 [ Arduinoで工作 ]">Arduinoで工作</a></li>
                             <li><a id="" data-des="LAMP環境構築を何度も構築しました。 [ LAMP環境構築経験あり ]">LAMP環境構築経験あり</a></li>
                             <li><a id="" data-des="CentOSとUbuntuの両方使えます。(違いがそんなにないから何ともいけないけど) [ CentOS/Ubuntu ]">CentOS/Ubuntu</a></li>
                             <li><a id="" data-des="GoogleAdminの管理経験があります。 [ GoogleAdmin ]">GoogleAdminの管理経験あり</a></li>
