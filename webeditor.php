@@ -1,13 +1,8 @@
 <?php
 
-require ("src/utility.php");
+require("src/utility.php");
 
 $descriptions = [
-    [
-        "img" => "img/contents/shorturl/1.png",
-        "title" => "ログイン",
-        "subtitle" => "アクセス時にユーザー認証を表示しスパムや大量作成の迷惑行為、短縮URLが犯罪に使用されることを防いでいます。",
-    ],
     [
         "img" => "img/contents/shorturl/2.png",
         "title" => "二要素認証",
@@ -55,57 +50,59 @@ $github = [
     <main class="mb-6">
         <section class="section main-content columns pb-0">
 
-            <?= html_sidebar("shorturl") ?>
+            <?= html_sidebar("webeditor") ?>
             <div class="container column is-10" id="about">
 
                 <section class="section columns pb-0">
                     <div class="card">
                         <div class="card-image">
                             <figure class="image is-fullwidth">
-                                <img src="img/contents/shorturl/6.png"/>
+                                <img src="img/contents/isedit/image.png" />
                             </figure>
                         </div>
                     </div>
                 </section>
                 <section class="section">
                     <div class="content">
-                        <p class="title"><ruby>短縮<rt>たんしゅ</rt></ruby>っくん</p>
-                        <p class="subtitle">URL短縮ツール</p>
+                        <p class="title">IsEdit</p>
+                        <p class="subtitle">Webエディター</p>
                         <p>
                             <small>#URL</small>
                             <small>#WebApp</small>
                             <small>#Tool</small>
-                            <small>#Analytics</small>
-                            <small>#Short</small>
+                            <small>#Editor</small>
+                            <small>#Share</small>
                             <small>#GUI</small>
                             <small>#JavaScript</small>
                             <small>#JSON</small>
                         </p>
                         <div class="buttons">
-                            <button class="button is-link"
-                                onclick="window.open('https:\/\/short.demo.yukitetsuka.com/short_login')">Demo</button>
+                            <button class="button is-link" onclick="window.open('https:\/\/isedit.itsystem-lab.com')">Product</button>
                         </div>
                         <p>
                             <strong>概要（利用者目線）</strong>
                             <br />
                         <ul>
                             <li>
-                                短縮URLを簡単に作成することが可能
+                                Web上で動くプログラムエディタ
                             </li>
                             <li>
-                                ログインにはメールを使用した二要素認証が導入されているため、セキュリティも安心
+                                一部の言語であればその場で実行可能
                             </li>
                             <li>
-                                作成した短縮URLが何回使用されたかを確認可能
+                                同時に複数のファイル編集可能
                             </li>
                             <li>
-                                必要に応じてURLを指定して作成することも、指定せずに作成することも可能
-                                <p>例: </p>
-                                <pre>portfolioを指定 : https://〇〇.com/portfolio</pre>
-                                <pre>指定なし : https://〇〇.com/g5OkQ2B</pre>
+                                保存・読み込み機能
                             </li>
                             <li>
-                                不要になったURLを簡単に削除することもできる
+                                URL共有機能
+                            </li>
+                            <li>
+                                テーマ・言語の簡単切り替え
+                            </li>
+                            <li>
+                                ショートカットキー( 保存や Undo、Redo )
                             </li>
                         </ul>
                         </p>
@@ -114,22 +111,16 @@ $github = [
                             <br />
                         <ul>
                             <li>
-                                <b>データベースが使用できない環境</b>(格安レンタルWebサーバーなど)でも利用できる
+                                JS-Interpreterを使うとこで、<p>ブラウザ標準のJavascriptに干渉せず</p>にセキュリティ面で安心
                             </li>
                             <li>
-                                すべてのデータを<b>テキストベース</b>で保存
+                                MySQLにてデータを保存
                             </li>
                             <li>
-                                ユーザー名やパスワードは<b>暗号化</b>されているほか、.htaccessを使用してアクセス制限を行っている
+                                ダウンロード時は複数のファイルを圧縮(zip)してダウンロードを行う
                             </li>
                             <li>
-                                サービスの導入も非常に簡単で、<b>プロジェクトをクローンするだけ</b>で完了
-                            </li>
-                            <li>
-                                パーミッションの計算には<b>2の冪乗</b>を使用
-                            </li>
-                            <li>
-                                <b>Google Analyticsのトラッキングコード</b>に対応しているため、簡単にGoogleWorkspaceと連携ができます。
+                                Tab補完や、ソースコードに色付けを実装
                             </li>
                         </ul>
                         </p>
@@ -140,12 +131,23 @@ $github = [
                         <h2 class="title is-2" id="myhistory">Description</h2>
                     </section>
                     <div class="columns is-multiline">
+                        <div class="column is-full">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-fullwidth p-4">
+                                        <img src="img/contents/isedit/1.png" style="
+                                                object-fit: contain;
+                                            ">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
                         <?php foreach ($descriptions as $value) : ?>
-                            <div class="column <?=$value["size"]??'is-half'?>">
+                            <div class="column <?= $value["size"] ?? 'is-half' ?>">
                                 <div class="card">
                                     <div class="card-image">
                                         <figure class="image is-4by3 ">
-                                            <img src="<?=$value["img"]?>" style="
+                                            <img src="<?= $value["img"] ?>" style="
                                                     object-fit: contain;
                                                 ">
                                         </figure>
@@ -153,14 +155,14 @@ $github = [
                                     <div class="card-content">
                                         <div class="media">
                                             <div class="media-content">
-                                                <p class="title is-4 is-size-6"><?=$value["title"]?></p>
-                                                <p class="subtitle is-6"><?=$value["subtitle"]?></p>
+                                                <p class="title is-4 is-size-6"><?= $value["title"] ?></p>
+                                                <p class="subtitle is-6"><?= $value["subtitle"] ?></p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        <?php endforeach?>
+                        <?php endforeach ?>
                     </div>
                 </div>
                 <div class="section pb-0">
@@ -198,13 +200,12 @@ $github = [
                         <h6 class="subtitle is-6">My GitHub status.</h6>
                     </section>
                     <div class="columns is-multiline">
-                        <?php foreach ($github as $url): ?>
+                        <?php foreach ($github as $url) : ?>
                             <div class="column is-half">
                                 <div class="card">
                                     <div class="card-image">
                                         <figure class="image is-2by1 ">
-                                            <a href="http://github.com/ponstream24" target="_blank"
-                                                rel="noopener noreferrer">
+                                            <a href="http://github.com/ponstream24" target="_blank" rel="noopener noreferrer">
                                                 <img src="
                                                 <?= $url ?>ponstream24" class="p-4">
                                             </a>
