@@ -68,7 +68,7 @@ $github = [
                             <small>#PHP</small>
                             <small>#JavaScript</small>
                             <small>#Talk</small>
-                            <small>#PushToTalk</small>
+                            <small>#PTT</small>
                         </p>
                         <div class="buttons">
                             <button class="button is-link" onclick="window.open('https:\/\/income.demo.yukitetsuka.com/')">Demo</button>
@@ -78,25 +78,22 @@ $github = [
                             <br />
                         <ul>
                             <li>
-                                Web上で動くプログラムエディタ
+                                Web上で動くインカムシステム
                             </li>
                             <li>
-                                一部の言語であればその場で実行可能
+                                PTT(プッシュ・トゥ・トーク)だから混線しない
                             </li>
                             <li>
-                                同時に複数のファイル編集可能
+                                チャット機能付き
                             </li>
                             <li>
-                                保存・読み込み機能
+                                個別で音量の調節が可能
                             </li>
                             <li>
-                                URL共有機能
+                                いつでも簡単にルーム作成
                             </li>
                             <li>
-                                テーマ・言語の簡単切り替え
-                            </li>
-                            <li>
-                                ショートカットキー( 保存や Undo、Redo )
+                                ショートカットキー( スペースキー )
                             </li>
                         </ul>
                         </p>
@@ -105,16 +102,13 @@ $github = [
                             <br />
                         <ul>
                             <li>
-                                JS-Interpreterを使うとこで、<b>ブラウザ標準のJavascriptに干渉せず</b>にセキュリティ面で安心
+                                P2Pが通信できない環境(学校や会社のネットワーク等)でもTURNサーバによって通信可能に
                             </li>
                             <li>
-                                MySQLにてデータを保存
+                                ルームに人数制限設定可能
                             </li>
                             <li>
-                                ダウンロード時は複数のファイルを圧縮(zip)してダウンロードを行う
-                            </li>
-                            <li>
-                                Tab補完や、ソースコードに色付けを実装
+                                ルームに入場制限(グループ設定)を設定することで、幹部会や部署ミーティング等が可能に
                             </li>
                         </ul>
                         </p>
