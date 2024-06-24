@@ -2,43 +2,70 @@
 
 require("src/utility.php");
 
+$poster = [
+    [
+        "img" => "img/contents/income/1.svg",
+    ],
+    [
+        "img" => "img/contents/income/2.svg",
+    ],
+    [
+        "img" => "img/contents/income/3.svg",
+    ],
+    [
+        "img" => "img/contents/income/4.svg",
+    ],
+    [
+        "img" => "img/contents/income/5.svg",
+    ],
+    [
+        "img" => "img/contents/income/6.svg",
+    ],
+    [
+        "img" => "img/contents/income/7.svg",
+    ],
+    [
+        "img" => "img/contents/income/8.svg",
+    ],
+];
+
 $descriptions = [
     [
-        "img" => "img/contents/isedit/2.png",
-        "title" => "編集エリア",
-        "subtitle" => "ファイルの中身を編集できます。また、ファイル名またはインフォメーションエリアをもとに、<b>言語を特定し適切なタブ補完</b>を行っています。",
+        "img" => "img/contents/income/d_1.png",
+        "title" => "待機所",
+        "subtitle" => "複数のルームによって<b>混線や聞き逃しを防止</b>できます。また、一目でどのルームに何人参加しているかもわかります。",
     ],
     [
-        "img" => "img/contents/isedit/3.png",
-        "title" => "ログエリア",
-        "subtitle" => "実行したスクリプトの実行結果が表示されます。JavaScriptの場合、log・error・info・warn・debugには背景色を適応させているのでより見やすくなっています。",
+        "img" => "img/contents/income/d_2.png",
+        "title" => "ルーム作成",
+        "subtitle" => "自分が参加したいルームがない場合は新しく作成することができます。<b>ルーム名(指定なしならランダム)を指定することや、人数制限、入場制限(グループ設定)、自動アナウンス</b>などを設定できます。",
     ],
     [
-        "img" => "img/contents/isedit/4.png",
-        "title" => "ファイルエリア",
-        "subtitle" => "編集するファイルを追加・変更・削除するエリアです。ファイルの追加・削除はもちろん、ファイル名の変更も行えます。その際に、変更後のファイル名に沿って言語も変更します。",
+        "img" => "img/contents/income/d_3.png",
+        "title" => "ルーム",
+        "subtitle" => "大きなマイクボタンに加えて、テキストチャット機能があります。また、<b>受信時には誰が発報しているか</b>や<b>音量バー</b>が表示されます。",
     ],
     [
-        "img" => "img/contents/isedit/5.png",
-        "title" => "コントロールエリア",
-        "subtitle" => "スクリプトの実行・停止や、共有・ダウンロード、ログエリアの削除などエディタをコントロールするエリアです。",
+        "img" => "img/contents/income/d_4.png",
+        "title" => "ルーム設定",
+        "subtitle" => "<b>入力デバイス・出力デバイスをはじめ、自動アナウンスのON/OFF、ログ出力切り替え</b>などができます。また、ユーザーごとの<b>音量も調節</b>できます。",
     ],
     [
-        "img" => "img/contents/isedit/6.png",
-        "title" => "インフォメーションエリア",
-        "subtitle" => "言語の変更、テーマを変更するエリアです。また現在の文字数や、今選択している行数、列数が表示されます。",
+        "img" => "img/contents/income/d_5.png",
+        "title" => "構成",
+        "subtitle" => "接続部分に関するワークフローです。",
     ],
 ];
 
 $github = [
-    "https://github-readme-stats-ponstream24s-projects.vercel.app/api/pin/?repo=IsEdit&count_private=true&show_owner=true&username=",
+    "https://github-readme-stats-ponstream24s-projects.vercel.app/api/pin/?repo=Income&count_private=true&show_owner=true&username=",
 ];
 ?>
 
 <!DOCTYPE html>
 <html style="scroll-behavior: smooth;">
 
-<?= html_head("URL短縮ツール") ?>
+<?= html_head("Web通話システム") ?>
 
 <body>
     <?= html_header() ?>
@@ -95,6 +122,12 @@ $github = [
                             <li>
                                 ショートカットキー( スペースキー )
                             </li>
+                            <li>
+                                音量バーでわかりやすく
+                            </li>
+                            <li>
+                                発言失敗時には音でお知らせ
+                            </li>
                         </ul>
                         </p>
                         <p>
@@ -105,31 +138,45 @@ $github = [
                                 P2Pが通信できない環境(学校や会社のネットワーク等)でもTURNサーバによって通信可能に
                             </li>
                             <li>
-                                ルームに人数制限設定可能
+                                ルームに<b>人数制限</b>設定可能
                             </li>
                             <li>
-                                ルームに入場制限(グループ設定)を設定することで、幹部会や部署ミーティング等が可能に
+                                ルームに<b>入場制限(グループ設定)</b>を設定することで、幹部会や部署ミーティング等が可能に
+                            </li>
+                            <li>
+                                <b>自動アナウンス(API連携可能)</b>によって対応漏れを防げる
+                            </li>
+                            <li>
+                                <b>管理者発報</b>によって割り込み可能に
                             </li>
                         </ul>
                         </p>
                     </div>
                 </section>
+                <div class="section py-0">
+                    <section class="mb-5">
+                        <h2 class="title is-2" id="myhistory">Poster</h2>
+                        <p class="subtitle">学祭に出展した際に使用したポスターです。</p>
+                    </section>
+                    <div class="columns is-multiline">
+                        <?php foreach ($poster as $value) : ?>
+                            <div class="column <?= $value["size"] ?? 'is-half' ?>">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <figure class="image is-2by3 ">
+                                            <img src="<?= $value["img"] ?>" class="px-1">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endforeach ?>
+                    </div>
+                </div>
                 <div class="section pb-0">
                     <section class="mb-5">
                         <h2 class="title is-2" id="myhistory">Description</h2>
                     </section>
                     <div class="columns is-multiline">
-                        <div class="column is-full">
-                            <div class="card">
-                                <div class="card-image">
-                                    <figure class="image is-fullwidth p-4">
-                                        <img src="img/contents/isedit/1.png" style="
-                                                object-fit: contain;
-                                            ">
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
                         <?php foreach ($descriptions as $value) : ?>
                             <div class="column <?= $value["size"] ?? 'is-half' ?>">
                                 <div class="card">
@@ -162,7 +209,7 @@ $github = [
                         <div class="level-item has-text-centered">
                             <div>
                                 <p class="heading">Use</p>
-                                <p class="title">1 Actives</p>
+                                <p class="title">3 Actives</p>
                                 <p>and 0 inactive ones</p>
                             </div>
                         </div>
@@ -176,7 +223,7 @@ $github = [
                         <div class="level-item has-text-centered">
                             <div>
                                 <p class="heading">Development period</p>
-                                <p class="title">3 day</p>
+                                <p class="title">50 hours</p>
                                 <p>maybe...</p>
                             </div>
                         </div>
