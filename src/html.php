@@ -59,7 +59,7 @@ echo <<<HTML
                         <ul>
                             <li><a id="page_shorturl" href="./shorturl">URL短縮ツール</a></li>
                             <li><a id="page_webeditor" href="./webeditor" data-des="Web上で動くプログラムエディタです。 https://isedit.itsystem-lab.com [ IsEdit ]">Webエディタ - IsEdit</a></li>
-                            <li><a id="" data-des="Web上で動く会話できるインカムです。プッシュトークのため混線しません。[ Income ]">インカムシステム</a></li>
+                            <li><a id="page_income" href="./income" data-des="Web上で動く会話できるインカムです。プッシュトークのため混線しません。[ Income ]">インカムシステム</a></li>
                             <li><a id="" data-des="シングル・サインオンシステムです。社内システムはすべてこれでOK! [ IGCAccount ]">Single Sign-On</a></li>
                             <li><a id="" data-des="Discord上で人狼ゲームが遊べるBotのダッシュボード。それぞれのゲーム構成などを自分好みに変更できます。[ WereWolfGamesDashboard ]">ゲーム用ダッシュボード</a></li>
                             <li><a id="" data-des="ユーザー認証システムです。ログイン機構はすべてこれでOK! [ I-Bound ]">認証システム</a></li>
