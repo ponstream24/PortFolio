@@ -1,13 +1,13 @@
 <?php
 
-require("src/utility.php");
+require ("src/utility.php");
 
 $skills = [
     "Tool" => [
         "Git" => "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
         "NPM" => "https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg",
         "Visual Studio Code" => "img/vscode.svg",
-        "Visual Studio"  => "https://visualstudio.microsoft.com/wp-content/uploads/2021/10/Product-Icon.svg",
+        "Visual Studio" => "https://visualstudio.microsoft.com/wp-content/uploads/2021/10/Product-Icon.svg",
         "IntelliJ IDEA" => "https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg",
         "DataGrip" => "https://resources.jetbrains.com/storage/products/company/brand/logos/DataGrip_icon.svg",
         "PhpStorm" => "https://resources.jetbrains.com/storage/products/company/brand/logos/PhpStorm_icon.svg",
@@ -100,21 +100,18 @@ $github = [
                         <div class="content">
                             <h2 id="about">Yuki Tetsuka</h2>
                             <p>
-                                <span class="icon">
-                                    <a class="navbar-item" href="https://github.com/ponstream24" target="_blank">
-                                        <i class='bx bxl-github'></i>
-                                    </a>
-                                </span>
-                                <span class="icon">
-                                    <a class="navbar-item" href="https://yukitetsuka.com" target="_blank">
-                                        <i class='bx bx-link'></i>
-                                    </a>
-                                </span>
-                                <span class="icon">
-                                    <a class="navbar-item" href="https://note.com/yukitetsuka/" target="_blank">
-                                        <i class='bx bx-note'></i>
-                                    </a>
-                                </span>
+                                <a class="navbar-item" href="https://github.com/ponstream24" target="_blank">
+                                    <i class='bx bxl-github'></i>
+                                    <b class="pl-2">Github</b>
+                                </a>
+                                <a class="navbar-item" href="https://yukitetsuka.com" target="_blank">
+                                    <i class='bx bx-link'></i>
+                                    <b class="pl-2">Home Page</b>
+                                </a>
+                                <a class="navbar-item" href="https://note.com/yukitetsuka/" target="_blank">
+                                    <i class='bx bx-note'></i>
+                                    <b class="pl-2">noto</b>
+                                </a>
                             </p>
                             <p>
                                 <strong>University Student</strong> <small>@Chiba Institute Of Technology</small>
@@ -389,7 +386,8 @@ $github = [
                                     <small>Japan</small>
                                     <i>IT企業にアルバイト</i>
                                     <br />
-                                    I'm working part-time at an IT company, where I'm gaining practical experience by developing full-stack web applications and working on various web-related tasks.
+                                    I'm working part-time at an IT company, where I'm gaining practical experience by
+                                    developing full-stack web applications and working on various web-related tasks.
                                 </p>
                             </div>
                         </div>
@@ -402,8 +400,8 @@ $github = [
                         <h6 class="subtitle is-6">Life's <strong>Journey</strong></h6>
                     </section>
                     <div class="columns is-multiline">
-                        <?php foreach ($skills as $name => $a) : ?>
-                            <?php foreach ($a as $key => $value) : ?>
+                        <?php foreach ($skills as $name => $a): ?>
+                            <?php foreach ($a as $key => $value): ?>
                                 <div class="column is-one-fifth">
                                     <div class="card">
                                         <div class="card-image">
@@ -455,20 +453,21 @@ $github = [
                         <h6 class="subtitle is-6">My GitHub status.</h6>
                     </section>
                     <div class="columns is-multiline">
-                        <?php foreach ($github as $url) : ?>
+                        <?php foreach ($github as $url): ?>
                             <div class="column is-half">
                                 <div class="card">
                                     <div class="card-image">
                                         <figure class="image is-2by1 ">
-                                            <a href="http://github.com/ponstream24" target="_blank" rel="noopener noreferrer">
+                                            <a href="http://github.com/ponstream24" target="_blank"
+                                                rel="noopener noreferrer">
                                                 <img src="
-                                                <?=$url?>ponstream24" class="p-4">
+                                                <?= $url ?>ponstream24" class="p-4">
                                             </a>
                                         </figure>
                                     </div>
                                 </div>
                             </div>
-                        <?php endforeach?>
+                        <?php endforeach ?>
                     </div>
                 </div>
             </div>
