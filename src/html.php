@@ -57,9 +57,12 @@ echo <<<HTML
                     <li>
                         <a>Web System</a>
                         <ul>
-                            <li><a id="page_shorturl" href="./shorturl">URL短縮ツール</a></li>
-                            <li><a id="page_webeditor" href="./webeditor" data-des="Web上で動くプログラムエディタです。 https://isedit.itsystem-lab.com [ IsEdit ]">Webエディタ - IsEdit</a></li>
-                            <li><a id="page_income" href="./income" data-des="Web上で動く会話できるインカムです。プッシュトークのため混線しません。[ Income ]">インカムシステム</a></li>
+                            <li><a id="page_shorturl" href="./shorturl">*URL短縮ツール</a></li>
+                            <li><a id="page_webeditor" href="./webeditor" data-des="Web上で動くプログラムエディタです。 https://isedit.itsystem-lab.com [ IsEdit ]">*Webエディタ - IsEdit</a></li>
+                            <li><a id="page_income" href="./income" data-des="Web上で動く会話できるインカムです。プッシュトークのため混線しません。[ Income ]">*インカムシステム</a></li>
+                            <li><a id="page_dftsimulator" href="https://github.com/ponstream24/DFTSimulator" target="_blank" data-des="DFTのWebシミュレーターです。[ DFTSimulator ]">*インカムシステム</a></li>
+                            <li><a id="page_php_get_dns" href="https://github.com/ponstream24/php_get_dns" target="_blank" data-des="PHPでDNSレコードを取得する。[ php_get_dns ]">*DNS取得ツール</a></li>
+                            <li><a id="page_php_check_mail" href="https://github.com/ponstream24/php_check_mail" target="_blank" data-des="PHPでメールの存在(生存)確認する。[ php_check_mail ]">*メール存在確認ツール</a></li>
                             <li><a id="" data-des="シングル・サインオンシステムです。社内システムはすべてこれでOK! [ IGCAccount ]">Single Sign-On</a></li>
                             <li><a id="" data-des="Discord上で人狼ゲームが遊べるBotのダッシュボード。それぞれのゲーム構成などを自分好みに変更できます。[ WereWolfGamesDashboard ]">ゲーム用ダッシュボード</a></li>
                             <li><a id="" data-des="ユーザー認証システムです。ログイン機構はすべてこれでOK! [ I-Bound ]">認証システム</a></li>
@@ -87,8 +90,8 @@ echo <<<HTML
                     <li>
                         <a>Native App</a>
                         <ul>
-                            <li><a id="" data-des="CUIで動作するアドレス管理アプリです。登録・削除・変更・検索が可能です。またファイルベースでデータを保存しています。 [ AddressTool ]">アドレス帳</a></li>
-                            <li><a id="" data-des="お絵描きソフトです。JavaのFrameを使って実装しています。基本的なお絵描きソフトの機能をまねています。 [ DrawJava ]">お絵描きソフト</a></li>
+                            <li><a id="" href="https://github.com/ponstream24/AddressTool" target="_blank" data-des="CUIで動作するアドレス管理アプリです。登録・削除・変更・検索が可能です。またファイルベースでデータを保存しています。 [ AddressTool ]">*アドレス帳</a></li>
+                            <li><a id="" href="https://github.com/ponstream24/DrawJava" target="_blank" data-des="お絵描きソフトです。JavaのFrameを使って実装しています。基本的なお絵描きソフトの機能をまねています。 [ DrawJava ]">*お絵描きソフト</a></li>
                             <li><a id="" data-des="Tomcatとjspを使ったポーカーゲームです。役の判別等に注力しました。 [ Pocker ]">ポーカーゲーム</a></li>
                             <li><a id="" data-des="ポケモンDBです。DataBaseにはH2を使ってます。 [ PokemonDB ]">ポケモンDB</a></li>
                             <li><a id="" data-des="カスタムしたMinecraft Serverです。Spigotベースで作成しています。 [ PixelCraft ]">カスタムMinecraftサーバー</a></li>
@@ -148,7 +151,7 @@ echo <<<HTML
                     <li>
                         <a>Other</a>
                         <ul>
-                            <li><a id="" data-des="GoogleFormに入力された情報をDiscordに通知します。 [ GoogleForm -> Discord ]">GoogleForm -> Discord</a></li>
+                            <li><a id="" data-des="GoogleFormに入力された情報をDiscordに通知します。 [ GoogleForm -> Discord ]" href="https://lesson.itsystem-lab.com/javascript/form-to-discord/" target="_blank" >*GoogleForm -> Discord</a></li>
                             <li><a id="" data-des="学際にてキャッシュレス決済を導入しました。 [ 学際にてキャッシュレス決済を導入 ]">学際にてキャッシュレス決済を導入</a></li>
                             <li><a id="" data-des="小学生の時にArudioにて電子工作を行いました。 [ Arduinoで工作 ]">Arduinoで工作</a></li>
                             <li><a id="" data-des="LAMP環境構築を何度も構築しました。 [ LAMP環境構築経験あり ]">LAMP環境構築経験あり</a></li>
