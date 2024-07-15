@@ -92,8 +92,8 @@ echo <<<HTML
                         <ul>
                             <li><a id="" href="https://github.com/ponstream24/AddressTool" target="_blank" data-des="CUIで動作するアドレス管理アプリです。登録・削除・変更・検索が可能です。またファイルベースでデータを保存しています。 [ AddressTool ]">*アドレス帳</a></li>
                             <li><a id="" href="https://github.com/ponstream24/DrawJava" target="_blank" data-des="お絵描きソフトです。JavaのFrameを使って実装しています。基本的なお絵描きソフトの機能をまねています。 [ DrawJava ]">*お絵描きソフト</a></li>
-                            <li><a id="" data-des="Tomcatとjspを使ったポーカーゲームです。役の判別等に注力しました。 [ Pocker ]">ポーカーゲーム</a></li>
-                            <li><a id="" data-des="ポケモンDBです。DataBaseにはH2を使ってます。 [ PokemonDB ]">ポケモンDB</a></li>
+                            <li><a id="" href="https://github.com/ponstream24/TomcatGames" target="_blank" data-des="Tomcatとjspを使ったポーカーゲームです。役の判別等に注力しました。 [ Pocker ]">ポーカーゲーム</a></li>
+                            <li><a id="" href="https://github.com/ponstream24/TomcatGames" target="_blank" data-des="ポケモンDBです。DataBaseにはH2を使ってます。 [ PokemonDB ]">ポケモンDB</a></li>
                             <li><a id="" data-des="カスタムしたMinecraft Serverです。Spigotベースで作成しています。 [ PixelCraft ]">カスタムMinecraftサーバー</a></li>
                             <li><a id="" data-des="カスタムしたMinecraft Proxy Serverです。BungeeCordベースで作成しています。 [ ProxyServer ]">カスタムプロキシサーバー</a></li>
                             <li><a id="" data-des="CLIのbashです。各サーバーのバックアップを自動で生成・アップロードします。 [ ImaginicServerBash ]">自動バックアップ</a></li>
